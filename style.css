@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;;
+}
+
+body{
+    min-height: 100vh;
+}
+
+
+ul{
+    list-style-position: inside;
+}
+
+li>p{
+    margin-bottom: 1rem;
+    font-size: small;
+    text-align: right;
+    color: rgb(76, 77, 78);
+}
+
+.container{
+    display: grid;
+    gap: 16px;
+    margin-top: 64px;
+    justify-items: center;
+}
+
+
+footer{
+    text-align: center;
+}
