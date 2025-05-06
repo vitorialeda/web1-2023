@@ -17,3 +17,14 @@
 
     font-family: "Poppins", sans-serif;
 }
+
+h1 {
+    font-size: 2rem;
+    line-height: 125%;
+    font-weight: bold;
+}
+
+p-md {
+    font-size: 0.875;
+    line-height: 170%;
+}
