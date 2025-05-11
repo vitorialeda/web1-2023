@@ -1,0 +1,94 @@
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    position: relative;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    border: solid 1px var(--stroke-default);
+    font-family: "Poppins", sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    padding: 0.6875rem 0.9375rem;
+    border: 2px solid var(--stroke-highlight);
+    outline: 4px solid var(--surface-secondary);
+}
+
+input[type="checkbox"] {
+    flex-shrink: 0;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--stroke-default);
+    border-radius: 0.35rem;
+}
+
+input[type="checkbox"]:hover {
+    border-color: var(--brand-mid);
+}
+
+input[type="checkbox"]:checked {
+    border-color: var(--brand-mid);
+    background: url(../assets/check.svg) center;
+    background-color: var(--brand-mid);
+}
+
+input[type="file"] {
+    appearance: none;
+    padding: 1.5rem 1rem;
+    background-repeat: no-repeat;
+    border: 1px dashed var(--stroke-default);
+    border-radius: 0.5rem;
+}
+
+input[type="file"]:hover {
+    border-color: var(--stroke-highlight);
+    background-color: var(--surface-secondary);
+}
+
+input::file-selector-button {
+    border: none;
+    background: none;
+    margin: 24px;
+}
+
+
+input:disabled {
+    color: var(--text-tertiary);
+    background: var(--surface-disabled);
+}
+
+label {
+    color: var(--text-secondary);
+}
+
+textarea {
+    height: 120px;
+}
+
+
+.formulario {
+    padding: 64px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.termos {
+    display: flex;
+    gap: 0.75rem;
+    align-items: start;
+    margin-bottom: 3rem;
+}
