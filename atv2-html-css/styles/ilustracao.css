@@ -1,0 +1,19 @@
+.ilustracao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    flex: 1;
+    padding: 64px;
+    background: var(--surface-secondary);
+}
+
+.ilustracao .text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ilustracao span {
+    color: var(--text-highlight);
+}

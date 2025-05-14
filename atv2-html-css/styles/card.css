@@ -1,0 +1,54 @@
+input[type="radio"] {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    border: 1px solid var(--stroke-default);
+}
+
+.form-item>p {
+    margin-block: 1.5rem 1rem;
+}
+
+.card:hover,
+input[type="radio"]:hover {
+    border-color: var(--stroke-highlight);
+}
+
+.card:has(input[type="radio"]:checked) {
+    padding: 0.4375rem;
+    padding-bottom: 0.9375rem;
+    border: 2px solid var(--stroke-highlight);
+}
+
+input[type="radio"]:checked {
+    border: 2px solid var(--stroke-highlight);
+    background: url(../assets/check.svg) center;
+    background-color: var(--stroke-highlight);
+}
+
+.card {
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    border: 1px solid var(--stroke-default);
+    border-radius: 0.5rem;
+}
+
+.card.grow {
+    flex-grow: 1;
+}
+
+.card input {
+    align-self: self-start;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
