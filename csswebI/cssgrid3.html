@@ -7,6 +7,47 @@
     <link rel="stylesheet" href="css/tag.css">
     <style>
         /* ... */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            grid-area: conteudo;
+        }
+
+        header {
+            grid-area: cabeçalho;
+        }
+
+        nav {
+            grid-area: navegacao
+        }
+
+        footer {
+            grid-area: rodape;
+        }
+
+        body {
+            display: grid;
+            min-height: 100vh;
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-areas:
+                "cabeçalho cabeçalho"
+                "navegacao conteudo"
+                "rodape rodape";
+        }
+
+        @media(max-width:700px) {
+            body {
+                grid-template-columns: 1fr;
+                grid-template-rows: 80px 80px 1fr 100px;
+                grid-template-areas: "navegacao" "cabeçalho" "conteudo" "rodape";
+            }
+        }
     </style>
 </head>
 
