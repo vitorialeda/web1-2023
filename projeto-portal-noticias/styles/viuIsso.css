@@ -1,0 +1,18 @@
+.viuIsso .noticia {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.viuIsso figcaption {
+    margin-top: 0.5rem;
+}
+
+.viuIsso .noticia img {
+    width: 72px;
+    height: 72px;
+    margin-right: 1rem;
+}
+
+.viuIsso .headerSection {
+    margin: 0;
+}

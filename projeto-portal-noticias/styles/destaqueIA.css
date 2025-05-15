@@ -1,0 +1,25 @@
+.destaquesIA {
+    grid-row: span 2;
+}
+
+.destaquesIA .noticia {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.destaquesIA .noticia img {
+    width: 176px;
+    height: 176px;
+    margin-left: 1rem;
+}
+
+.destaquesIA .noticia p {
+    height: 88px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text-color-secondary);
+}
+
+.destaquesIA .heading2 {
+    margin-block: 8px 4px;
+}

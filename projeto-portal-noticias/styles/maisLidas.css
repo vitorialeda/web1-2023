@@ -1,0 +1,22 @@
+.maisLidas .container {
+    margin-top: 0;
+    display: flex;
+    border-top: 1px solid var(--stroke-color);
+}
+
+.maisLidas .noticia {
+    position: relative;
+}
+
+.maisLidas .label {
+    position: absolute;
+    z-index: 100;
+    top: 8px;
+    left: 8px;
+}
+
+.maisLidas figcaption {
+    max-width: 292px;
+    max-height: 66px;
+    overflow: hidden;
+}
