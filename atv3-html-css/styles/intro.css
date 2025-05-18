@@ -1,6 +1,4 @@
 .intro {
-    width: 100vw;
-    aspect-ratio: 16 / 9;
     background-image: url(../assets/imagens/Background_Intro.png);
     background-size: cover;
 }

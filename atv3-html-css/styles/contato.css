@@ -1,6 +1,4 @@
 .contato {
-    width: 100vw;
-    aspect-ratio: 16 / 9;
     background-image: url(../assets/imagens/Background_Contacts.png);
     background-size: cover;
 }
