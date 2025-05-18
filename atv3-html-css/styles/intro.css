@@ -1,0 +1,69 @@
+.intro {
+    width: 100vw;
+    aspect-ratio: 16 / 9;
+    background-image: url(../assets/imagens/Background_Intro.png);
+    background-size: cover;
+}
+
+.intro .title-lg {
+    padding-block: 0.5rem 1.25rem;
+}
+
+.intro .descricao {
+    max-width: 680px;
+    justify-self: center;
+}
+
+.intro .avatar {
+    margin-inline: auto;
+    margin-bottom: 3.5rem;
+    position: relative;
+    width: 6rem;
+    aspect-ratio: 1 / 1;
+}
+
+.intro .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    outline: 2px solid var(--red);
+    outline-offset: 0.25rem;
+}
+
+.intro .avatar::before {
+    width: 2rem;
+    height: 2rem;
+    content: " ";
+    background: url(../assets/icones/closed-tag.svg);
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    right: -0.5rem;
+}
+
+.intro .tecnologias {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 5rem 6rem;
+    gap: 1rem;
+    color: var(--gray-500);
+}
+
+.intro .tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    background-color: var(--gray-300);
+}
+
+.intro .tag img {
+    width: 24px;
+    aspect-ratio: 1 / 1;
+}
+
+.intro img {
+    justify-self: center;
+}

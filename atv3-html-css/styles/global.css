@@ -19,6 +19,7 @@
     --gray-400: #878EA1;
     --gray-500: #C0C4CE;
     --gray-600: #E2E4E9;
+
 }
 
 .title-lg,
@@ -28,6 +29,7 @@
     font-size: 3.5rem;
     line-height: 120%;
     font-weight: bold;
+    color: var(--gray-600);
 }
 
 .title-md {
@@ -56,4 +58,37 @@
 
 .text-sm {
     font-size: 0.875rem;
+}
+
+.txt-gray-600 {
+    color: var(--gray-600);
+}
+
+.txt-gray-500 {
+    color: var(--gray-500);
+}
+
+.txt-gray-400 {
+    color: var(--gray-400);
+}
+
+.txt-red {
+    color: var(--red);
+}
+
+.txt-purple {
+    color: var(--purple);
+}
+
+
+body {
+    background: var(--gray-100);
+}
+
+section {
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }

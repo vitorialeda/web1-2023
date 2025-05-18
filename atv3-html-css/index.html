@@ -4,47 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
     <link rel="stylesheet" href="./styles/index.css">
     <title>Portfolio</title>
 </head>
 
 <body>
 
-    <section class="principal">
-        <img src="" alt="">
+    <section class="intro">
+        <div class="avatar">
+            <img src="./assets/imagens/pfp.jpg" alt="">
+        </div>
 
-        <h3>Hello World! Meu nome é <span>Martina Santos</span> e sou</h3>
-        <h1>Desenvolvedora Fullstack</h1>
-        <p>Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha
-            paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
-        <span class="tecnologias"></span>
+        <h3 class="subtitle txt-gray-500">Hello World! Meu nome é <span class="txt-red">Martina Santos</span> e sou
+        </h3>
+        <h1 class="title-lg">Desenvolvedora Fullstack</h1>
+        <p class="descricao text-sm txt-gray-400">Transformo necessidades em aplicações reais, evolventes e
+            funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções
+            inovadoras e eficazes para desafios complexos.</p>
+        <span class="tecnologias">
+            <div class="tag text-md"><img src="./assets/icones/GitHub.svg" alt="icone github"> GitHub
+            </div>
+            <div class="tag text-md"><img src="./assets/icones/HTML.svg" alt="icone html"> HTML</div>
+            <div class="tag text-md"><img src="./assets/icones/CSS.svg" alt="icone css"> CSS</div>
+            <div class="tag text-md"><img src="./assets/icones/JavaScript.svg" alt="icone javascript"> JavaScript
+            </div>
+            <div class="tag text-md"><img src="./assets/icones/React.svg" alt="icone react"> React</div>
+            <div class="tag text-md"><img src="./assets/icones/Node.js.svg" alt="icone node.js"> Node.js</div>
+        </span>
+
+        <img src="./assets/icones/CaretDoubleDown.svg" alt="">
     </section>
 
 
     <section class="projetos">
-        <h4>Meu trabalho</h4>
-        <h3>Veja os projetos em destaque</h3>
-        <div class="project-card"></div>
+        <h3 class="subtitle txt-red">Meu trabalho</h3>
+        <h4 class="title-md">Veja os projetos em destaque</h4>
+        <div class="project-card">
+            <figure class="card">
+                <img src="./assets/imagens/Thumbnail_Project-01.png" alt="">
+                <h5 class="title-sm">Travelgram</h5>
+                <figcaption class="text-sm txt-gray-500">Rede social onde as pessoas mostram os registros de suas
+                    viagens pelo mundo
+                </figcaption>
+            </figure>
+            <figure class="card">
+                <img src="./assets/imagens/Thumbnail_Project-02.png" alt="">
+                <h5 class="title-sm">Tech News</h5>
+                <figcaption class="text-sm txt-gray-500">Homepage de um portal de notícias sobre a área de tecnologia
+                </figcaption>
+            </figure>
+            <figure class="card">
+                <img src="./assets/imagens/Thumbnail_Project-03.png" alt="">
+                <h5 class="title-sm">Página de receita</h5>
+                <figcaption class="text-sm txt-gray-500">Página com o passo a passo de uma receita para cupcakes
+                </figcaption>
+            </figure>
+            <figure class="card">
+                <img src="./assets/imagens/Thumbnail_Project-04.png" alt="">
+                <h5 class="title-sm">Zingen</h5>
+                <figcaption class="text-sm txt-gray-500">Landing Page completa e responsiva de um aplicativo de Karaokê
+                </figcaption>
+            </figure>
+            <figure class="card">
+                <img src="./assets/imagens/Thumbnail_Project-05.png" alt="">
+                <h5 class="title-sm">Refund</h5>
+                <figcaption class="text-sm txt-gray-500">Um sistema para pedido e acompanhamento de reembolso
+                </figcaption>
+            </figure>
+            <figure class="card">
+                <img src="./assets/imagens/Thumbnail_Project-06.png" alt="">
+                <h5 class="title-sm">Página de turismo</h5>
+                <figcaption class="text-sm txt-gray-500">Página com as principais informações para quem quer viajar para
+                    Busan
+                </figcaption>
+            </figure>
+        </div>
     </section>
 
 
     <section class="servicos">
-        <h4>Meus serviços</h4>
-        <h3>Como posso ajudar o seu negócio</h3>
+        <h3 class="subtitle txt-red">Meus serviços</h3>
+        <h4 class="title-md">Como posso ajudar o seu negócio</h4>
+        <div class="cards-servicos">
+            <div class="card">
+                <img src="./assets/icones/Devices.svg" alt="">
+                <h5 class="title-sm">Websites e Aplicativos</h5>
+                <p class="text-sm txt-gray-500">Desenvolvimento de interfaces</p>
+            </div>
+            <div class="card">
+                <img src="./assets/icones/HardDrives.svg" alt="">
+                <h5 class="title-sm">API e banco de dados</h5>
+                <p class="text-sm txt-gray-500">Criação de serviços do sistema </p>
+            </div>
+            <div class="card">
+                <img src="./assets/icones/Infinity.svg" alt="">
+                <h5 class="title-sm">DevOps</h5>
+                <p class="text-sm txt-gray-500">Gestão e infraestrutura da aplicação</p>
+            </div>
+        </div>
     </section>
 
 
     <section class="contato">
-        <h4>contato</h4>
-        <h3>Gostou do meu trabalho?</h3>
-        <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
+        <h4 class="subtitle txt-purple">Contato</h4>
+        <h3 class="title-md">Gostou do meu trabalho?</h3>
+        <p class="text-md txt-gray-500">Entre em contato ou acompanhe as minhas redes sociais!</p>
 
         <div class="redes">
-            <div class="social-button">
-                icone rede
-                nome
-                icone de saida
-            </div>
+            <button class="btn-redes">
+                <img src="./assets/icones/LinkedinLogo.svg" alt="">
+                <a href="" class="txt-gray-500">Linkedin</a>
+                <img src="./assets/icones/ArrowUpRight.svg" alt="">
+            </button>
+            <button class="btn-redes">
+                <img src="./assets/icones/InstagramLogo.svg" alt="">
+                <a href="" class="txt-gray-500">Instagram</a>
+                <img src="./assets/icones/ArrowUpRight.svg" alt="">
+            </button>
+            <button class="btn-redes">
+                <img src="./assets/icones/GithubLogo.svg" alt="">
+                <a href="" class="txt-gray-500">GitHub</a>
+                <img src="./assets/icones/ArrowUpRight.svg" alt="">
+            </button>
+            <button class="btn-redes">
+                <img src="./assets/icones/EnvelopeSimple.svg" alt="">
+                <a href="" class="txt-gray-500">E-mail</a>
+                <img src="./assets/icones/ArrowUpRight.svg" alt="">
+            </button>
         </div>
     </section>
 

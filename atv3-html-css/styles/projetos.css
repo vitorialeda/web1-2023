@@ -1,0 +1,38 @@
+.projetos {
+    background: #17181c;
+}
+
+.projetos .title-md {
+    padding-block: 0.5rem 3.5rem;
+}
+
+.projetos .project-card {
+    width: 1040px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 1.5rem;
+}
+
+.projetos .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 330px;
+    height: 280px;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: var(--gray-300);
+    text-align: start;
+}
+
+.projetos img {
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.projetos .title-sm,
+.projetos .text-sm {
+    padding-inline: 0.25rem;
+}

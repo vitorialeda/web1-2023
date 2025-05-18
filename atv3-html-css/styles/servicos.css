@@ -1,0 +1,25 @@
+.servicos {
+    max-height: 480px;
+}
+
+.servicos .cards-servicos {
+    display: flex;
+    gap: 24px;
+    margin-top: 3.5rem;
+}
+
+.servicos .card {
+    width: 280px;
+    text-align: start;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    border: 2px solid var(--gray-200);
+}
+
+.servicos .card .title-sm {
+    margin-block: 1.25rem 0.5rem;
+}
+
+.servicos .card .title-md {
+    margin-top: 0.5rem;
+}
