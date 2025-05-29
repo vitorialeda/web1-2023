@@ -1,36 +1,44 @@
-let expensesArray = []
+const expensesList = document.querySelector("ul");
+
 
 document.querySelector("form").addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const item = {
-        expenseName: document.getElementById("expense").value,
-        expenseCategory: document.getElementById("category").value,
-        expenseValue: document.getElementById("amount").value
-    }
+    const expenseName = document.getElementById("expense").value;
+    const expenseCategory = document.getElementById("category").value;
+    const expenseValue = document.getElementById("amount").value;
 
-    expensesArray.push(item);
-    renderArray();
+    const newItem = document.createElement("li");
+    newItem.classList.add("expense");
+
+    newItem.innerHTML = `
+            <img src="./img/food.svg" alt="Ícone de tipo da despesa" />
+
+            <div class="expense-info">
+              <strong>${expenseName}</strong>
+              <span>${expenseCategory}</span>
+            </div>
+
+            <span class="expense-amount"><small>R$</small>${expenseValue}</span>`;
+
+    const deleteButton = createDeleteButton();
+    newItem.appendChild(deleteButton);
+
+    expensesList.appendChild(newItem);
 });
 
-function renderArray() {
-    const expensesList = document.querySelector("ul");
-    expensesArray.forEach((item, index) => {
-        const expenseLi = document.createElement("li");
-        expenseLi.classList.add("expense");
-        expenseLi.id = index;
 
-        expenseLi.innerHTML = `
-        <img src="./img/food.svg" alt="Ícone de tipo da despesa" />
-        <div class="expense-info">
-            <strong>${item.expenseName}</strong>
-            <span>${item.expenseCategory}</span>
-        </div>
+function createDeleteButton() {
+    const deleteButton = document.createElement("img");
+    deleteButton.setAttribute("src", "./img/remove.svg");
+    deleteButton.setAttribute("alt", "remover");
+    deleteButton.classList.add("remove-icon");
+    deleteButton.addEventListener("click", deleteItem);
 
-        <span class="expense-amount"><small>R$</small>${item.expenseValue}</span>
+    return deleteButton;
+}
 
-        <img src="./img/remove.svg" alt="remover" class="remove-icon" />`;
 
-        expensesList.appendChild(expenseLi);
-    })
+function deleteItem() {
+    this.parentNode.remove();
 }
