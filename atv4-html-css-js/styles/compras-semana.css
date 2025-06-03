@@ -1,0 +1,10 @@
+.compras-semana {
+    display: grid;
+    padding-inline: 2rem;
+    gap: 2.5rem;
+}
+
+.input-field {
+    display: grid;
+    gap: 1rem;
+}
