@@ -1,18 +1,33 @@
 // Referencia componente que guardará os itens
 const expensesList = document.querySelector("ul");
 
+const expensesArray = []
 
 document.querySelector("form").addEventListener("submit", (e) => {
     // Evita o redirecionamento
     e.preventDefault();
 
-    // Guarda os valores do formulário em variáveis
-    const expenseName = document.getElementById("expense").value;
-    const expenseCategory = document.getElementById("category").value;
-    const expenseValue = document.getElementById("amount").value;
+    // Guarda os valores do formulário em um objeto
+    const newExpense = {
+        expenseName: document.getElementById("expense").value,
+        expenseCategory: document.getElementById("category").value,
+        expenseValue: document.getElementById("amount").value
+    }
 
+    // Adiciona o novo objeto ao final da lista
+    expensesArray.push(newExpense);
+
+    // Adiciona novo item à ul
+    expensesList.appendChild(createNewListItem(newExpense));
+
+    updateStatus();
+});
+
+// Cria novo li
+function createNewListItem({ expenseName, expenseCategory, expenseValue }) {
     // Novo item da lista que conterá os valores do formulário
     const newItem = document.createElement("li");
+
     // Adiciona classe ao item para estilização
     newItem.classList.add("expense");
 
@@ -33,10 +48,8 @@ document.querySelector("form").addEventListener("submit", (e) => {
     // Adiciona botão ao item
     newItem.appendChild(deleteButton);
 
-    // Adiciona novo item à ul
-    expensesList.appendChild(newItem);
-});
-
+    return newItem;
+}
 
 // Cria botão p/ exclusão de item
 function createDeleteButton() {
@@ -58,4 +71,22 @@ function deleteItem() {
 // Adiciona duas casas decimais ao numero
 function formatValue(value) {
     return Number(value).toLocaleString("pt-br", { minimumFractionDigits: 2 })
+}
+
+function updateStatus() {
+    // Referencia aos elementos do DOM
+    const domElementExpensesQuantity = document.getElementById("quantidadeDespesas");
+    const domElementTotal = document.getElementById("valorTotal");
+
+    // Quantidade de despesas
+    const expensesQuantity = expensesArray.length;
+
+    // Soma os valores de todas as despesas
+    const total = expensesArray.reduce((acumulador, despesa) => {
+        return acumulador + Number(despesa.expenseValue);
+    }, 0);
+
+    // Atualiza valores no DOM
+    domElementExpensesQuantity.innerText = `${expensesQuantity} despesas`
+    domElementTotal.innerHTML = `<small>R$</small> ${formatValue(total)}`
 }
