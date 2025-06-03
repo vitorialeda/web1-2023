@@ -51,6 +51,8 @@ input {
     font: 400 1rem/140% var(--font-family);
     color: var(--content-tertiary);
     padding-inline: 1.125rem;
+    height: 2.75rem;
+    border-radius: 0.75rem;
 }
 
 ul {
