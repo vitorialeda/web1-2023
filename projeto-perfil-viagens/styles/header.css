@@ -1,1 +1,31 @@
-/* TO DO */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+}
+
+.profile-info {
+    display: flex;
+    gap: 2rem;
+    max-width: 37rem;
+}
+
+header .profile-picture {
+    width: 11rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.profile-text h1 {
+    margin-bottom: 0.5rem;
+}
+
+
+.profile-summary .summary-item {
+    display: flex;
+    width: 17.5rem;
+    align-content: center;
+    gap: 0.5rem;
+}

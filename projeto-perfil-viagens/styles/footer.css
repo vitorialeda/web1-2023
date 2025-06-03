@@ -1,1 +1,16 @@
-/* TO DO */
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color-secondary);
+    padding-block: 1.5rem;
+}
+
+footer span {
+    display: flex;
+    gap: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text-color-secondary);
+}

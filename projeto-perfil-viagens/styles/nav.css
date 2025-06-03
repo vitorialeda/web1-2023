@@ -1,1 +1,30 @@
-/* TO DO */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color-secondary);
+}
+
+nav .profile-picture {
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100px;
+}
