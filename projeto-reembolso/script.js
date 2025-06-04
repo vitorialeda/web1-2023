@@ -9,6 +9,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
 
     // Guarda os valores do formulário em um objeto
     const newExpense = {
+        id: expensesArray.length,
         expenseName: document.getElementById("expense").value,
         expenseCategory: document.getElementById("category").value,
         expenseValue: document.getElementById("amount").value
@@ -24,16 +25,18 @@ document.querySelector("form").addEventListener("submit", (e) => {
 });
 
 // Cria novo li
-function createNewListItem({ expenseName, expenseCategory, expenseValue }) {
+function createNewListItem({ id, expenseName, expenseCategory, expenseValue }) {
     // Novo item da lista que conterá os valores do formulário
     const newItem = document.createElement("li");
+
+    newItem.id = id;
 
     // Adiciona classe ao item para estilização
     newItem.classList.add("expense");
 
     // Conteúdo interno do item
     newItem.innerHTML = `
-            <img src="./img/food.svg" alt="Ícone de tipo da despesa" />
+            <img src="./img/${expenseCategory}.svg" alt="Ícone de tipo da despesa" />
 
             <div class="expense-info">
               <strong>${expenseName}</strong>
@@ -64,6 +67,9 @@ function createDeleteButton() {
 
 // Função de deletar item
 function deleteItem() {
+    // Retira do array
+    expensesArray.splice(this.parentNode.id, 1)
+    updateStatus();
     // Remove o elemento pai do botão
     this.parentNode.remove();
 }
