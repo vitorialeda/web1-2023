@@ -8,3 +8,33 @@
     display: grid;
     gap: 1rem;
 }
+
+.compras-semana h1 {
+    margin-block: 1rem 0.25rem;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    color: var(--content-secondary);
+    background-color: var(--always-white);
+    border-radius: 0.75rem;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.alert {
+    display: flex;
+    font: var(--label);
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    color: var(--always-white);
+    background-color: var(--color-danger);
+}
+
+.compras-semana .text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
