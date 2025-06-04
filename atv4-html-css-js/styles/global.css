@@ -70,13 +70,18 @@ li {
     font: var(--paragraph);
 }
 
+p {
+    font: var(--paragraph);
+}
+
 button {
     background-color: var(--color-brand);
     height: 2.75rem;
+    border: none;
     border-radius: 0.75rem;
+    padding-inline: 1.5rem;
     font: var(--label);
     color: var(--always-white);
-    border: none;
 }
 
 button:hover {

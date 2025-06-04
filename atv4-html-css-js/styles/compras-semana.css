@@ -1,11 +1,18 @@
 .compras-semana {
     display: grid;
-    padding-inline: 2rem;
+    padding: 2rem 2rem 0;
     gap: 2.5rem;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.logo {
+    justify-self: center;
 }
 
 .input-field {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 
@@ -16,7 +23,7 @@
 .list-item {
     display: flex;
     justify-content: space-between;
-    padding: 0.75rem;
+    padding: 1rem;
     color: var(--content-secondary);
     background-color: var(--always-white);
     border-radius: 0.75rem;
@@ -31,10 +38,36 @@
     border-radius: 0.75rem;
     color: var(--always-white);
     background-color: var(--color-danger);
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 200ms;
+
+}
+
+.alert.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 200ms, opacity 200ms;
+
 }
 
 .compras-semana .text {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+#list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .input-field {
+        flex-direction: row;
+    }
+
+    .input-field input {
+        flex-grow: 1;
+    }
 }

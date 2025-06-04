@@ -10,6 +10,8 @@
 
 <body class="compras-semana">
 
+    <img class="logo" src="./assets/logo.svg" alt="">
+
     <header>
         <a href=""><- Voltar </a>
                 <h1>Compras da semana</h1>
@@ -17,27 +19,29 @@
 
 
     <div class="input-field">
-        <input id="text-field" type="text" placeholder="Adicione um novo item">
-        <button>Adicionar item</button>
+        <input id="text-field" type="text" placeholder="Adicione um novo item" autofocus>
+        <button id="add-item">Adicionar item</button>
     </div>
 
 
-    <ul>
-        <li class="list-item">
+    <ul id="list">
+        <!-- <li class="list-item">
             <div class="text">
                 <input type="checkbox">
                 <p>Pão de forma</p>
             </div>
 
             <img src="./assets/delete-02-stroke-rounded.svg" alt="delete button">
-        </li>
+        </li> -->
     </ul>
 
 
-    <div class="alert">
+    <div class="alert hidden">
         <span class="text"><img src="./assets/warning-circle-filled.svg" alt="">O item foi removido da lista</span>
-        <img src="./assets/delete-small.svg" alt="delete buttons">
+        <img class="delete-alert" src="./assets/delete-small.svg" alt="delete buttons">
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
