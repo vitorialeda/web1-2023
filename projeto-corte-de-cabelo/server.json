@@ -1,0 +1,14 @@
+{
+  "schedules": [
+    {
+      "id": "1750866134175",
+      "name": "Warley Junior",
+      "when": "2025-06-25T17:00:00.000Z"
+    },
+    {
+      "id": "1750866344284",
+      "name": "Martiniano da Silva",
+      "when": "2025-06-25T23:00:00.000Z"
+    }
+  ]
+}
